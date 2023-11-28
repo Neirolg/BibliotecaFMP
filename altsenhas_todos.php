@@ -7,7 +7,7 @@ require_once 'verificar_tipo_usuario_B.php';
 <html>
 
 <head>
-  <title>Library</title>
+  <title>Biblioteca</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./estilos/estilo_02.css">
@@ -43,7 +43,7 @@ require_once 'verificar_tipo_usuario_B.php';
   }
   ?>
   <div class="bloco">
-    <img src="./imagens/library.png" style="width:12%" ;br>
+    <img src="./imagens/logo.png" style="width:12%" ;br>
     <h2>Olá, <?php echo $dados['nome']; ?> <a href='logout.php'>Sair</a></h2>
     <form method="POST" autocomplete="on" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
       <h1>Alterar Senha dos Usuarios</h1>
@@ -56,9 +56,6 @@ require_once 'verificar_tipo_usuario_B.php';
 
   </div>
 
-  <footer>
-    <p>Desenvolvido pelos Alunos de Analise e Desenvolvimento de Sistemas</p>
-  </footer>
 
   <body>
 

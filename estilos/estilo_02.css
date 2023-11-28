@@ -1,26 +1,57 @@
+body{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: center;
+ /* Altura da janela de visualização */
+}
+
 .bloco {
   padding: 28px 0;
   text-align: center;
   font-size: 20px;
+  background-color: #95d2a6;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+    max-width: 90%;
+    margin: auto;
+    border: 20px solid #2980b9; /* Cor da borda azul */
+    border-radius: 40px;
+    overflow: hidden;
+
 }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-
-}
-
-li a {
-  display: block;
+h2 {  display: center;
   color: #000;
   padding: 8px 16px;
   text-decoration: none;
   font-size: 50px;
+  max-width: 50%;
+    margin: auto;
+    border: 1px solid #2980b9; /* Cor da borda azul */
+    border-radius: 40px;
+    overflow: hidden;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-block: black;
+}
+
+li a {
+  display: float;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 50px;
+
 }
 
 li a:hover {
-  background-color: #555;
+  background-color: #185218;
   color: white;
 }
 
@@ -33,5 +64,73 @@ li a:hover {
 table,
 th,
 td {
-  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #871010;
+  color: #000;
+}
+input[type=text]{
+  background: #d0d0d0;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 300px;
+  height: 36px;
+  margin: 10px 0;
+  padding: 10px 20px;
+  border: none;
+}
+input[type=tel]{
+  background: #d0d0d0;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 300px;
+  height: 36px;
+  margin: 10px 0;
+  padding: 10px 20px;
+  border: none;
+}
+#btn-entrar,
+input[type=submit] {
+  background: #ced295;
+  width: 120px; /* Largura do botão */
+  height: 30px; /* Altura do botão */
+  text-align: center; /* Centralizar texto horizontalmente */
+  line-height: center; /* Centralizar texto verticalmente */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+input[type=password] {
+  background: #d0d0d0;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 300px;
+  height: 36px;
+  margin: 10px 0;
+  padding: 10px 20px;
+  border: none;
+}
+input[type=search] {
+  background: #d0d0d0;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 300px;
+  height: 36px;
+  margin: 10px 0;
+  padding: 10px 20px;
+  border: none;
+}
+#tipo_usuario,
+#genero,
+#tipo_pesquisa{
+  background: #d0d0d0;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 300px;
+  height: 36px;
+  margin: 10px 0;
+  padding: 10px 20px;
+  border: none;
+
 }

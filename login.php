@@ -52,15 +52,15 @@ if (isset($_POST['btn-entrar'])) {
 <html>
 
 <head>
-  <title>Library</title>
+  <title>Biblioteca</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./estilos/estilo.css">
+  <link rel="stylesheet" href="./estilos/estilo_02.css">
 </head>
 
 <body>
-  <div class="login">
-    <img src="./imagens/library.png" style="width:12%" ;br>
+  <div class="bloco">
+  <img src="imagens/logo.png" alt="Usuário" style="width:12%"/>
     <?php if (!empty($erros)) {
       foreach ($erros as $erro) {
         echo $erro;

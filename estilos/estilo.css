@@ -1,38 +1,62 @@
 .login {
-  padding: 138px 0;
-  text-align: center;
-
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
-input[type=text] {
-  border: 2px solid black;
-  border-radius: 4px;
-  width: 20%;
-  padding: 5px 2px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  font-size: 20px;
+body{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: center;
+ /* Altura da janela de visualização */
 }
+.logo {
+  width: 170px;
+  height: 170px;
+  margin: 10px 0;
 
+}
+.login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+ }
+input[type=text]{
+    background: #d0d0d0;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 300px;
+    height: 36px;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: none;
+}
 input[type=password] {
-  border: 2px solid black;
-  border-radius: 4px;
-  width: 20%;
-  padding: 5px 2px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  font-size: 20px;
+    background: #d0d0d0;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 300px;
+    height: 36px;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: none;
 }
 
 button[type=submit] {
-  background-color: green;
+  background: #95d2a6;
+  width: 120px; /* Largura do botão */
+  height: 30px; /* Altura do botão */
+  text-align: center; /* Centralizar texto horizontalmente */
+  line-height: center; /* Centralizar texto verticalmente */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
   border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
 }

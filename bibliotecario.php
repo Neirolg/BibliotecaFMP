@@ -7,7 +7,7 @@ require_once 'verificar_tipo_usuario_B.php';
 <html>
 
 <head>
-    <title>Library</title>
+    <title>Biblioteca</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilos/estilo_02.css">
@@ -15,8 +15,8 @@ require_once 'verificar_tipo_usuario_B.php';
 
 <body>
     <div class="bloco">
-        <img src="./imagens/library.png" style="width:12%" ;br>
-        <h2>Olá, <?php echo $dados['nome']; ?></h2>
+        <img src="./imagens/logo.png" style="width:12%" ;br>
+        <h2>Bibliotecário, <?php echo $dados['nome']; ?></h2>
         <ul>
             <li><a href="./emprestimos.php">Emprestimos</a></li>
             <li><a href="./cadastro_livros.php">Cadastro Livros</a></li>

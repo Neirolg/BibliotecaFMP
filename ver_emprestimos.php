@@ -6,7 +6,7 @@ require_once 'verifica_sessao.php';
 <html>
 
 <head>
-  <title>Library</title>
+  <title>Biblioteca</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./estilos/estilo_02.css">
@@ -14,7 +14,7 @@ require_once 'verifica_sessao.php';
 
 <body>
   <div class="bloco">
-    <img src="./imagens/library.png" style="width:12%" ;br>
+    <img src="./imagens/logo.png" style="width:12%" ;br>
     <h2>Olá, <?php echo $dados['login']; ?> <a href='logout.php'>Sair</a></h2>
     <?php
     $erro = $sucesso = "";
@@ -28,8 +28,8 @@ require_once 'verifica_sessao.php';
       //Saida de Dados
       while ($row = mysqli_fetch_assoc($resultado)) {
         echo "<form action='$_SERVER[PHP_SELF]' name='fvemprestimos' method='POST'>";
-        echo "<table><tr><th>ID</th><th>Tombo</th><th>Título</th><th>Data de Retirada</th><th>Data Devolucao</th><th>Renovações</th></tr>";
-        echo  "<tr><td>" . $row["id_emprestimo"] . "</td><td>" . $row["tombo"] . "</td><td>" . $row["titulo"] . "</td><td>" . $row["data"] . "</td><td>" . $row["data_devolucao"] . "</td><td>" . $row["renovacoes"] . "</td><td>" . "<button type='submit'  name='renovar' value='$row[id_emprestimo]'>Renovar</button>" . "</td></tr>" . "</table>";
+        echo "<table><tr><th>Inscrição</th><th>Título</th><th>Data de Retirada</th><th>Data Devolucao</th><th>Renovações</th></tr>";
+        echo  "<tr><td>" . $row["tombo"] . "</td><td>" . $row["titulo"] . "</td><td>" . $row["data"] . "</td><td>" . $row["data_devolucao"] . "</td><td>" . $row["renovacoes"] . "</td><td>" . "<button type='submit'  name='renovar' value='$row[id_emprestimo]'>Renovar</button>" . "</td></tr>" . "</table>";
         echo "</form>";
       }
     } else {

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Library</title>
+  <title>Biblioteca</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./estilos/estilo_02.css">
@@ -58,7 +58,7 @@
   }
   ?>
   <div class="bloco">
-    <img src="./imagens/library.png" style="width:12%" ;br>
+    <img src="./imagens/logo.png" style="width:12%" ;br>
     <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST">
       <h1>Pesquisar Livros</h1>
       <p>*Campos Obrigatorios</p>

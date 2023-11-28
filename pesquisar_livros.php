@@ -6,7 +6,7 @@ require_once 'verifica_sessao.php';
 <html>
 
 <head>
-  <title>Library</title>
+  <title>Biblioteca</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./estilos/estilo_02.css">
@@ -62,7 +62,7 @@ require_once 'verifica_sessao.php';
   }
   ?>
   <div class="bloco">
-    <img src="./imagens/library.png" style="width:12%" ;br>
+    <img src="./imagens/logo.png" style="width:12%" ;br>
      <h2>Olá, <?php echo $dados['nome']; ?> <a href='logout.php'>Sair</a></h2>
     <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST">
       <h1>Pesquisar Livros</h1>
@@ -80,8 +80,8 @@ require_once 'verifica_sessao.php';
     //Saida de Dados
     if (!empty($dados_pesquisa)) {
       while ($row = mysqli_fetch_assoc($dados_pesquisa)) {
-        echo "<br><table><tr><th>ID</th><th>Genero</th><th>ISBN</th><th>Tombo</th><th>Titulo</th><th>Autores</th><th>Edicao</th><th>Ano</th><th>Editora</th><th>Exemplar</th><th>Observações</th></tr>";
-        echo  "<tr><td>" . $row["id_livro"] . "</td><td>" . $row["genero"] . "</td><td>" . $row["isbn"] . "</td><td>" . $row["tombo"] . "</td><td>" . $row["titulo"] . "</td><td> " . $row["autores"] . "</td><td> " . $row["edicao"] . "</td><td> " . $row["ano"] . "</td><td> " . $row["editora"] . "</td><td> " . $row["exemplar"] . "</td><td> " . $row["observacoes"] . "</td></tr>" . "</table>";
+        echo "<br><table><tr><th>ID</th><th>Genero</th><th>ISBN</th><th>Tombo</th><th>Titulo</th><th>Autores</th><th>Edicao</th><th>Ano</th><th>Editora</th><th>Exemplar</th></tr>";
+        echo  "<tr><td>" . $row["id_livro"] . "</td><td>" . $row["genero"] . "</td><td>" . $row["isbn"] . "</td><td>" . $row["tombo"] . "</td><td>" . $row["titulo"] . "</td><td> " . $row["autores"] . "</td><td> " . $row["edicao"] . "</td><td> " . $row["ano"] . "</td><td> " . $row["editora"] . "</td><td> " . $row["exemplar"] . "</td></tr>" . "</table>";
       }
     }
     ?>

@@ -7,7 +7,7 @@ require_once 'verificar_tipo_usuario_B.php';
 <html>
 
 <head>
-    <title>Library</title>
+    <title>Biblioteca</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilos/estilo_02.css">
@@ -28,7 +28,7 @@ require_once 'verificar_tipo_usuario_B.php';
     mysqli_close($conexao);//Fecha conexao com o banco de dados
     ?>
     <div class="bloco">
-        <img src="./imagens/library.png" style="width:12%" ;br>
+        <img src="./imagens/logo.png" style="width:12%" ;br>
         <h2>Olá, <?php echo $dados['nome']; ?> <a href='logout.php'>Sair</a></h2>
         <?php echo $erro; ?><br>
         <?php
